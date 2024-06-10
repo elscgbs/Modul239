@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" media="screen">
+    <script src="script.js" async></script>
+    <title>Kontakt</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="Bilder/Logo_1.png" alt="Logo"></a>
+        <div class="header-text">
+            <div class="nav-text"><a href="ueber_mich.html">Über mich</a></div>
+            <div class="nav-text"><a href="faehigkeiten.html">Fähigkeiten</a></div>
+            <div class="nav-text"><a href="projekte.html">Projekte</a></div>
+            <div class="nav-text"><a href="kontakt.html">Kontakt</a></div>
+        </div>
+        <div class="menu"><a href="menu.html">MENU</a></div>
+    </header>
+    <div class="linie-header"></div>
+    <div class="container">
+        <div class="big-img"></div>
+        <div class="big-text">Kontakt</div>
+    </div>
+        <div class="überschrift">Kontaktformular</div>
+    <div class="kontakt">
+        <div id="Kontaktformularseite">
+            <form class="kontaktformular" action="" method="" enctype="">
+                
+                <div class="row">
+                    <label>Firma: </label>
+                    <div class="field">
+                         <input class="input" type="text" name="firma" maxlength="50" value="">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label>Anrede <span class="pflichtfeld">*</label>
+                    <div class="field">
+                        <select class="input not_empty" name="anrede" required="">
+                            <option value="" selected="selected">&nbsp;</option>
+                            <option value="Herr">Herr</option>
+                            <option value="Frau">Frau</option>
+                            <option value="Divers">Divers</option>
+                        </select>
+                            
+                    </div>
+                </div>
+
+                <div class="row">	
+                    <label>Vorname: <span class="pflichtfeld">*</span></label>
+                    <div class="field">
+                         <input class="input not_empty" type="text" name="vorname" maxlength="50" value="" required="">
+                    </div>
+                </div>
+
+                <div class="row">	
+                     <label>Nachname: <span class="pflichtfeld">*</span></label>
+                    <div class="field">
+                        <input class="input not_empty" type="text" name="name" maxlength="50" id="textfield" value="" required="">
+                    </div>
+                </div>
+                    
+                <div class="row">	
+                    <label>E-Mail: <span class="pflichtfeld">*</span></label>
+                    <div class="field">
+                        <input class="input not_empty" id="email" type="text" name="email" maxlength="50" value="" required="">
+                    </div>
+                </div>
+                    
+                <div class="row">	
+                    <label>Telefon: </label>
+                    <div class="field">
+                        <input class="input" type="text" name="telefon" maxlength="50" value="">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label>Betreff: <span class="pflichtfeld">*</span></label>
+                    <div class="field">
+                        <input class="input not_empty" type="text" name="betreff" maxlength="50" value="" required="">
+                    </div>
+                </div>
+
+                <div class="row">	
+                    <label>Nachricht: <span class="pflichtfeld">*</span></label>
+                    <div class="field">
+                        <textarea class="input not_empty" name="nachricht" cols="30" rows="10" required="" style="width: 100%; height: 110px; resize: none;"></textarea>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <label></label>
+                    <div class="field buttons">
+                        <div class="pflichtfeldhinweis">
+                        Hinweis: Felder mit <span class="pflichtfeld">*</span> müssen ausgefüllt werden.</div>
+                        <input type="submit" name="kf-km" value="Senden" onclick="senden();">
+                        <input type="submit" name="delete" value="Löschen" onclick="loeschen()">
+                    </div>
+                </div>      
+                
+            </form> 
+        </div>
+    </div>
+    <div class="linie"></div>
+    <div class="center">
+        <div class="überschrift" id="impressum">Weitere Adressen</div>
+        <div class="text">E-Mail: <a href="mailto:elisa.schoch@edu.gbssg.ch">elisa.schoch@edu.gbssg.ch</a>
+            <br>Instagram: <a href="https://www.instagram.com/elisas_creative_corner/">elisas_creative_corner</a></div>
+        </div>
+        <div class="linie"></div>
+    <div class="center">
+    <div class="überschrift" id="impressum">Impressum</div>
+    <div class="text">Impressum<br>Elisa Schoch<br>Mühletobelstrasse 58<br>9400 Rorschach</div>
+    </div>
+    <div class="linie"></div>
+    <footer>
+        <div class>
+            <div class="impressum">
+                <a href="kontakt.html#impressum"><u>Impressum</u></a><br>Elisa Schoch<br>Mühletobelstrasse 58<br>9400 Rorschach
+            </div>
+        </div>
+        <div class="copyright">Copyright 2024 by Elisa Schoch. All Rights Reserved.</div>
+        <img class="logoFooter" src="Bilder/Logo_1.png" alt="Logo">
+    </footer>
+</body>
+</html>

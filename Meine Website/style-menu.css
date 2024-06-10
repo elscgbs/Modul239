@@ -1,0 +1,72 @@
+@font-face{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 300;
+    src: url('fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf'), local('Playfair Display');
+}
+body{
+    background-color: #94BE98;
+}
+.menu{
+    flex-shrink: 0;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    align-self: center;
+    margin-top: 1rem;
+}
+.menu:hover{
+    color: #517B5F;
+}
+.linie{
+    width:  calc(100% - 4rem);
+    height: 4px;
+    background: #ffffff;
+    margin: 2rem;
+    margin-right: 0;
+    padding:0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem;
+}
+a{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-decoration: none;
+}
+#linie-unten{
+    position: absolute;
+    bottom: 0;
+}
+a:hover{
+    color: #517B5F;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.nav-text{
+    margin: 1.5rem;
+}
+@media only screen  and (min-width: 771px) and (max-width: 991px){
+    html{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 770px) {
+    html{
+        font-size: 14px;
+    }
+}

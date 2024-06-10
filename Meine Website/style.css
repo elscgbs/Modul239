@@ -1,0 +1,424 @@
+@font-face{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 300;
+    src: url('fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf'), local('Playfair Display');
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    width: calc(100% - 6rem);
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3rem;
+    padding-top: 1rem;
+}
+.logo{
+    width: 3.875rem;
+    height: 4.75rem;
+    flex-shrink: 0;
+}
+.header-text{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.nav-text{
+    flex-shrink: 0;
+    color: #000;
+
+    font-family: "Playfair Display";
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+.menu{
+    flex-shrink: 0;
+    color: #000;
+    text-align: right;
+    font-family: "Playfair Display";
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    display: none;
+}
+.linie{
+    width:  calc(100% - 6rem);
+    height: 3px;
+    background: #000;
+    margin: 3rem;
+    margin-right: 0;
+    padding:0;
+}
+.linie-header{
+    width:  calc(100% - 6rem);
+    height: 3px;
+    background: #000;
+    margin: 3rem;
+    margin-top: 1rem;
+    margin-right: 0;
+    padding:0;
+}
+.container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.big-img{
+    width:calc(100% - 6rem);
+    height:20rem;
+    flex-shrink: 0;
+    border-radius: 5.4375rem;
+    background: url(Bilder/hintergrund_farbe.png) lightgray 50% /cover no-repeat;
+    margin:3rem;
+    margin-right: 0;
+}
+.big-text{
+    width: 44.875rem;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.überschrift{
+    width: calc(100%-4rem);
+    color: #000;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 2rem;
+    margin-top: 0;
+}
+.text{
+    width: 70%;
+    color: #000;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: center;
+    margin: 2rem;
+    margin-top: 0;
+}
+.text ul {
+    padding-inline-start: 0;
+}
+.container-smol-img{
+    display: flex;
+    width: calc(100% - 8rem);
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    flex-wrap: wrap;
+    margin: 4rem;
+}
+.smol-img{
+    width: 25rem;
+    height: 25rem;
+    border-radius: 5.4375rem;
+    background: #94BE98;
+    color: #ffffff;
+    font-family: "Playfair Display";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.smol-img:hover{
+    background:#517B5F;
+}
+footer{
+    width: 100%;
+    height: 11rem;
+    background-color: #94BE98;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin:0;
+}
+.impressum{
+    color: #215338;
+    font-family: "Playfair Display";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 2rem;
+    padding-left: 4rem;
+}
+.copyright{
+    color: #215338;
+    font-family: "Playfair Display";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.logoFooter{
+    width: 5.6875rem;
+    height: 7rem;
+    flex-shrink: 0;
+    margin: 2rem;
+    margin-right: 4rem;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    width: calc(100%-4rem);
+    margin: 4rem;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+ul{
+    line-height:1rem; 
+    text-align: center;
+}
+table{
+    width: calc(100% - 8rem);
+    margin-left: 4rem;
+    padding:2rem;
+    border-collapse: collapse;
+}
+#tr1{
+    width: 20%;
+}
+#tr2{
+    width: 20%;
+}
+#tr3{
+    width: 20%;
+}
+#tr4{
+    width: 40%;
+}
+td{
+    font-family: "Playfair Display";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: center;
+    border: 0.5px solid;
+}
+.tabellen-ueberschrift{
+    font-size: 2rem;
+    font-style: bold;
+}
+#me{
+    width: 30%;
+    align-self: center;
+    border-radius: 5rem;
+}
+.kontakt{
+    display:flex;
+    justify-content: center;
+}
+#Kontaktformularseite
+{
+    width: calc(100% - 8rem);
+}
+
+.pflichtfeldhinweis
+{ 
+    width: 50%;
+    font-family: "Playfair Display";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: center;
+    margin: 0.5rem;
+} 
+
+#kontakadressen
+{
+    width: 100%;
+    text-align: center;
+}
+label{
+    font-family: "Playfair Display";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: center;
+}
+.bilder{
+    width: 25rem;
+    border-radius: 5rem;
+}
+.video{
+    width: 25rem;
+    border-radius: 5rem;
+}
+@media only screen  and (min-width: 771px) and (max-width: 991px){
+    html{
+        font-size: 12px;
+    }
+    header{
+        width: calc(100% - 4rem);
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 1rem;
+    }
+    .linie{
+        width:  calc(100% - 4rem);
+        margin: 2rem;
+    }
+    .linie-header{
+        width:  calc(100% - 4rem);
+        margin: 2rem;
+        margin-top: 0.8rem;
+    }
+    .big-img{
+        width:calc(100% - 4rem);
+        height: 18rem;
+        margin:2rem;
+    }
+    .big-text{
+        width:calc(100% - 4rem);
+        font-size: 6rem;
+        font-weight: 400;
+    }
+    .überschrift{
+        width: calc(100% - 4rem);
+        font-size: 3.5rem;
+        margin: 1rem 2rem 1rem 2rem;
+    }
+    .text{
+        width: 75%;
+    }
+    .container-smol-img{
+        width: calc(100% - 4rem);
+        gap: 2rem;
+        margin: 2rem;
+    }
+    .smol-img{
+        width: 18rem;
+        height: 18rem;
+        font-size: 2.5rem;
+    }
+    footer{
+        width: 100%;
+        height: 10rem;
+    }
+    .impressum{
+        font-size: 1.25rem;
+        padding: 1.5rem;
+        padding-left: 2rem;
+    }
+    .copyright{
+        font-size: 1.25rem;
+        padding-bottom: 1.5rem;
+    }
+    .logoFooter{
+        width: 5.6875rem;
+        height: 7rem;
+        margin: 1.5rem;
+        margin-right: 2rem;
+    }
+}
+@media only screen and (max-width: 770px) {
+    html{
+        font-size: 10px;
+    }
+    .header-text{
+        display: none;
+    }
+    .menu{
+        display:block;
+        align-self:center;
+    }
+    header{
+        width: calc(100% - 4rem);
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 1rem;
+    }
+    .linie{
+        width:  calc(100% - 4rem);
+        margin: 2rem;
+    }
+    .linie-header{
+        width:  calc(100% - 4rem);
+        margin: 2rem;
+        margin-top: 0.8rem;
+    }
+    .big-img{
+        width:calc(100% - 4rem);
+        height: 18rem;
+        margin:2rem;
+    }
+    .big-text{
+        width:calc(100% - 4rem);
+        font-size: 6rem;
+        font-weight: 400;
+    }
+    .überschrift{
+        width: calc(100% - 4rem);
+        font-size: 3.5rem;
+        margin: 1rem 2rem 1rem 2rem;
+    }
+    .text{
+        width: 75%;
+    }
+    .container-smol-img{
+        width: calc(100% - 4rem);
+        gap: 2rem;
+        margin: 2rem;
+    }
+    .smol-img{
+        width: 18rem;
+        height: 18rem;
+        font-size: 2.5rem;
+    }
+    footer{
+        width: 100%;
+        height: 10rem;
+    }
+    .impressum{
+        font-size: 1.25rem;
+        padding: 1.5rem;
+        padding-left: 2rem;
+    }
+    .copyright{
+        font-size: 1.25rem;
+        padding-bottom: 1.5rem;
+    }
+    .logoFooter{
+        width: 5.6875rem;
+        height: 7rem;
+        margin: 1.5rem;
+        margin-right: 2rem;
+    }
+}
